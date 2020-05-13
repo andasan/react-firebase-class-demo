@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { db } from "../firebase";
 
-const Create = ({history}) => {
+const Create = ({ history }) => {
     const [title, setTitle] = useState("");
     const [slug, setSlug] = useState("");
     const [coverImage, setCoverImage] = useState("");
     const [coverImageAlt, setCoverImageAlt] = useState("");
     const [content, setContent] = useState("");
+
+
 
     const createPost = () => {
         // console.log({ title, slug, coverImage, coverImageAlt, content });
@@ -26,6 +28,12 @@ const Create = ({history}) => {
             .set(newPost)
             .then(() => history.push(`/`));
     };
+
+    const generateSlug = () => {
+        const slugger = slugify(title);
+        console.log(slugger);
+        setSlug(slugger);
+    }
 
     const generateDate = () => {
         const now = new Date();

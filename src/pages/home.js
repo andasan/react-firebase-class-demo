@@ -33,8 +33,7 @@ const Home = () => {
     return <h1>Loading...</h1>
   }
 
-  // const slugger = slugify('something I want to test');
-  // console.log(slugger);
+  
 
   return (
     <>
