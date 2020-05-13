@@ -21,8 +21,7 @@ const Create = ({history}) => {
             content
         };
         db
-            .ref()
-            .child(`posts/${slug}`)
+            .ref(`posts/${slug}`)
             .set(newPost)
             .then(() => history.push(`/`));
     };
