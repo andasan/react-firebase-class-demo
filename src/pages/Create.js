@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { db } from "../firebase";
+import slugify from 'react-slugify';
 
 const Create = ({ history }) => {
     const [title, setTitle] = useState("");
@@ -13,6 +14,7 @@ const Create = ({ history }) => {
     const createPost = () => {
         // console.log({ title, slug, coverImage, coverImageAlt, content });
         const date = generateDate();
+        const slug = generateSlug();
         const newPost = {
             title,
             dateFormatted: date.formatted,
