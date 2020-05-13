@@ -10,7 +10,7 @@ const Home = () => {
       coverImage: "https://source.unsplash.com/collection/190727/1600x900",
       coverImageAlt: "Another random kitten from placekitten.com.",
       slug: "my-second-blog-post",
-      dateFormatted: "2019-08-07",
+      dateFormatted: "2300-08-07",
       datePrettify: "August 7th, 2300"
     },
     {
@@ -20,7 +20,7 @@ const Home = () => {
       coverImage: "https://source.unsplash.com/collection/190728/1600x900",
       coverImageAlt: "A random kitten from placekitten.com.",
       slug: "my-first-blog-post",
-      dateFormatted: "2019-08-01",
+      dateFormatted: "2300-08-01",
       datePrettify: "August 1st, 2300"
     }
   ];
