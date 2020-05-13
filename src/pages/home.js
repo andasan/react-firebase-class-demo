@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { db } from "../firebase";
+// import slugify from 'react-slugify';
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -31,6 +32,9 @@ const Home = () => {
   if (loading) {
     return <h1>Loading...</h1>
   }
+
+  // const slugger = slugify('something I want to test');
+  // console.log(slugger);
 
   return (
     <>
